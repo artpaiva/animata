@@ -35,7 +35,7 @@ body {
     font-size: 1.2rem;
 }
 
-.continue-below, .continue-ellipsis {
+.kin-vertical, .kin-ellipsis {
     width: 100%;
     text-align: center;
     margin: 1rem auto;
@@ -43,7 +43,7 @@ body {
     padding-left: 0;
     list-style-type: none;
 }
-.continue-below li, .continue-ellipsis li{
+.kin-vertical li, .kin-ellipsis li{
     width: 2rem;
     margin: -2rem auto;
     font-size: 3rem;
@@ -51,31 +51,31 @@ body {
     list-style: none;
     animation: dance 1.2s ease-in-out infinite;
 }
-.continue-below.alt{
+.kin-vertical.alt{
     margin: 2.5rem auto;
 }
-.continue-below.alt li{
+.kin-vertical.alt li{
     animation: jumpeach 1.2s ease-in-out infinite;
 }
-.continue-below li:nth-child(2), .continue-ellipsis li:nth-child(2){
+.kin-vertical li:nth-child(2), .kin-ellipsis li:nth-child(2){
     animation-delay: 0.1s;
 }
-.continue-below li:nth-child(3), .continue-ellipsis li:nth-child(3){
+.kin-vertical li:nth-child(3), .kin-ellipsis li:nth-child(3){
     animation-delay: 0.2s;
 }
-.continue-below li:nth-child(4), .continue-ellipsis li:nth-child(4){
+.kin-vertical li:nth-child(4), .kin-ellipsis li:nth-child(4){
     animation-delay: 0.3s;
 }
-.continue-below li:nth-child(5), .continue-ellipsis li:nth-child(5){
+.kin-vertical li:nth-child(5), .kin-ellipsis li:nth-child(5){
     animation-delay: 0.4s;
 }
-.continue-below li:nth-child(6), .continue-ellipsis li:nth-child(6){
+.kin-vertical li:nth-child(6), .kin-ellipsis li:nth-child(6){
     animation-delay: 0.5s;
 }
-.continue-below li:nth-child(7), .continue-ellipsis li:nth-child(7){
+.kin-vertical li:nth-child(7), .kin-ellipsis li:nth-child(7){
     animation-delay: 0.6s;
 }
-.continue-below li:nth-child(8), .continue-ellipsis li:nth-child(7){
+.kin-vertical li:nth-child(8), .kin-ellipsis li:nth-child(8){
     animation-delay: 0.7s;
 }
 @keyframes dance {
@@ -84,7 +84,7 @@ body {
   100% { transform: translate(1rem, 0); }
 }
 
-.continue-ellipsis li{
+.kin-ellipsis li{
     display: inline-block;
     margin: auto -2rem;
     animation: jumpeach 1.2s ease-in-out infinite;
@@ -94,7 +94,7 @@ body {
   50% { transform: translate(0, -1rem); }
   100% { transform: translate(0, 1rem); }
 }
-.continue-ellipsis.alt li{
+.kin-ellipsis.alt li{
     animation-name: dance;
 }
 
@@ -102,11 +102,11 @@ body {
     border-bottom: 1px solid #FAF5F005;
 }
 
-.go-below{
+.go-vertical{
     padding: 2rem;
     animation: bounce 1.6s ease-in-out infinite;
 }
-.go-below i{
+.go-vertical i{
     font-size: 2rem;
 }
 @keyframes bounce {
@@ -163,7 +163,7 @@ body {
             <div class="baldachin-subtitle">Full CSS animations that last forever</span></div>
         </div>
     </body>
-    <ul class="continue-below">
+    <ul class="kin-vertical">
         <li>·</li>
         <li>·</li>
         <li>·</li>
@@ -172,7 +172,7 @@ body {
         <li>·</li>
         <li>·</li>
     </ul>
-    <ul class="continue-ellipsis">
+    <ul class="kin-ellipsis">
         <li>·</li>
         <li>·</li>
         <li>·</li>
@@ -180,14 +180,14 @@ body {
         <li>·</li>
         <li>·</li>
     </ul>
-    <ul class="continue-below alt">
+    <ul class="kin-vertical alt">
         <li>·</li>
         <li>·</li>
         <li>·</li>
         <li>·</li>
         <li>·</li>
     </ul>
-    <ul class="continue-ellipsis alt">
+    <ul class="kin-ellipsis alt">
         <li>·</li>
         <li>·</li>
         <li>·</li>
@@ -198,7 +198,7 @@ body {
     <div class="square-ball">
         <div></div>
     </div>
-    <div class="go-below"><i class="material-icons">keyboard_arrow_down</i></div>
+    <div class="go-vertical"><i class="material-icons">keyboard_arrow_down</i></div>
     <div class="hold-progress">
         <div></div>
     </div>
