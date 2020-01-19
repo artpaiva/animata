@@ -14,19 +14,25 @@ body {
     text-align: center;
     box-sizing: border-box;
     color: #FAF5F0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
-.baldachin-title{
+.baldachin-wrapper{
     display: inline-block;
-    margin-bottom: 1rem;
     padding: 2rem 3rem;
     border-bottom: 1px solid #FAF5F005;
+    margin-bottom: 2rem;
+}
+.baldachin-title{
     font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
     text-rendering: optimizelegibility !important;
 }
 .baldachin-title span{
     color: #FAF5F099;
+}
+.baldachin-subtitle{
+    color: #FAF5F055;
+    font-size: 1.2rem;
 }
 
 .continue-below, .continue-ellipsis {
@@ -130,7 +136,8 @@ body {
 
 .hold-progress{
     position: relative;
-    width: 40%;
+    width: 90%;
+    max-width: 600px;
     height: 2px;
     margin: 1rem auto;
     background: #FAF5F055;
@@ -151,7 +158,10 @@ body {
 </head>
 <body>
     <div class="baldachin">
-        <div class="baldachin-title">Infinilha<span>.css</span></div>
+        <div class="baldachin-wrapper">
+            <div class="baldachin-title">Infinilha<span>.css</span></div>
+            <div class="baldachin-subtitle">Full CSS animations that last forever</span></div>
+        </div>
     </body>
     <ul class="continue-below">
         <li>·</li>
