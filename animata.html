@@ -35,7 +35,7 @@ body {
     font-size: 1.2rem;
 }
 
-.kin-vertical, .kin-ellipsis {
+.kin-vertical, .kin-horizontal {
     width: 100%;
     text-align: center;
     margin: 1rem auto;
@@ -43,7 +43,7 @@ body {
     padding-left: 0;
     list-style-type: none;
 }
-.kin-vertical li, .kin-ellipsis li{
+.kin-vertical li, .kin-horizontal li{
     width: 2rem;
     margin: -2rem auto;
     font-size: 3rem;
@@ -57,25 +57,25 @@ body {
 .kin-vertical.alt li{
     animation: jumpeach 1.2s ease-in-out infinite;
 }
-.kin-vertical li:nth-child(2), .kin-ellipsis li:nth-child(2){
+.kin-vertical li:nth-child(2), .kin-horizontal li:nth-child(2){
     animation-delay: 0.1s;
 }
-.kin-vertical li:nth-child(3), .kin-ellipsis li:nth-child(3){
+.kin-vertical li:nth-child(3), .kin-horizontal li:nth-child(3){
     animation-delay: 0.2s;
 }
-.kin-vertical li:nth-child(4), .kin-ellipsis li:nth-child(4){
+.kin-vertical li:nth-child(4), .kin-horizontal li:nth-child(4){
     animation-delay: 0.3s;
 }
-.kin-vertical li:nth-child(5), .kin-ellipsis li:nth-child(5){
+.kin-vertical li:nth-child(5), .kin-horizontal li:nth-child(5){
     animation-delay: 0.4s;
 }
-.kin-vertical li:nth-child(6), .kin-ellipsis li:nth-child(6){
+.kin-vertical li:nth-child(6), .kin-horizontal li:nth-child(6){
     animation-delay: 0.5s;
 }
-.kin-vertical li:nth-child(7), .kin-ellipsis li:nth-child(7){
+.kin-vertical li:nth-child(7), .kin-horizontal li:nth-child(7){
     animation-delay: 0.6s;
 }
-.kin-vertical li:nth-child(8), .kin-ellipsis li:nth-child(8){
+.kin-vertical li:nth-child(8), .kin-horizontal li:nth-child(8){
     animation-delay: 0.7s;
 }
 @keyframes dance {
@@ -84,7 +84,7 @@ body {
   100% { transform: translate(1rem, 0); }
 }
 
-.kin-ellipsis li{
+.kin-horizontal li{
     display: inline-block;
     margin: auto -2rem;
     animation: jumpeach 1.2s ease-in-out infinite;
@@ -94,7 +94,7 @@ body {
   50% { transform: translate(0, -1rem); }
   100% { transform: translate(0, 1rem); }
 }
-.kin-ellipsis.alt li{
+.kin-horizontal.alt li{
     animation-name: dance;
 }
 
@@ -172,7 +172,7 @@ body {
         <li>·</li>
         <li>·</li>
     </ul>
-    <ul class="kin-ellipsis">
+    <ul class="kin-horizontal">
         <li>·</li>
         <li>·</li>
         <li>·</li>
@@ -187,7 +187,7 @@ body {
         <li>·</li>
         <li>·</li>
     </ul>
-    <ul class="kin-ellipsis alt">
+    <ul class="kin-horizontal alt">
         <li>·</li>
         <li>·</li>
         <li>·</li>
