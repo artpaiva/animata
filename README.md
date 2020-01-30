@@ -1,4 +1,4 @@
 # Animata
 Infinilha.css
 
-Simple and clean animations
+Simple and clean animations that last forever
