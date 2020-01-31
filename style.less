@@ -1,29 +1,33 @@
+// Variables
+@black: #191921;
+@white: #FAF5F0;
+@timing: 1.2s;
 
 body {
-  background: #191921;
+  background: @black;
 }
 * {
   text-align: center;
   box-sizing: border-box;
-  color: #FAF5F0;
+  color: @white;
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
 }
 .baldachin-wrapper{
   display: inline-block;
   padding: 2rem 3rem;
-  border-bottom: 1px solid #FAF5F005;
+  border-bottom: 1px solid fadeout(@white, 90%);
   margin-bottom: 2rem;
 
   .baldachin-title{
     font-size: 4rem;
     text-rendering: optimizelegibility !important;
     span {
-      color: #FAF5F099;
+      color: fadeout(@white, 50%);
     }
   }
   .baldachin-subtitle{
-    color: #FAF5F055;
+    color: fadeout(@white, 35%);
     font-size: 1.2rem;
   }
 }
@@ -41,13 +45,13 @@ body {
     font-size: 3rem;
     list-style-type: none;
     list-style: none;
-    animation: dance 1.2s ease-in-out infinite;
+    animation: dance @timing ease-in-out infinite;
   }
 }
 .kin-vertical.alt{
   margin: 2.5rem auto;
   li {
-    animation: jumpeach 1.2s ease-in-out infinite;
+    animation: jumpeach @timing ease-in-out infinite;
   }
 }
 
@@ -70,7 +74,7 @@ body {
   li {
     display: inline-block;
     margin: auto -2rem;
-    animation: jumpeach 1.2s ease-in-out infinite;
+    animation: jumpeach @timing ease-in-out infinite;
   }
 }
 @keyframes jumpeach {
@@ -90,7 +94,7 @@ body {
 
 .go-vertical {
   padding: 2rem;
-  animation: bounce 1.2s ease-in-out infinite;
+  animation: bounce @timing ease-in-out infinite;
   i {
     font-size: 2rem;
   }
@@ -108,7 +112,7 @@ body {
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 4px;
-    border: 2px solid #FAF5F0;
+    border: 2px solid @white;
     animation: squaring 1.6s ease-in-out infinite;
   }
 }
@@ -130,14 +134,14 @@ body {
 .hold-progress {
   #baseWidth;
   height: 2px;
-  background: #FAF5F055;
+  background: fadeout(@white, 65%);;
   overflow: hidden;
   div {
     position: absolute;
     width: 1%;
     height: inherit;
-    background: #FAF5F0;
-    animation: indefinite 1.2s linear infinite;
+    background: @white;
+    animation: indefinite @timing linear infinite;
   }
 }
 @keyframes indefinite {
@@ -154,10 +158,10 @@ body {
     opacity: 0;
     position: absolute;
     font-size: 2rem;
-    animation: gonext 1.2s ease-in-out infinite;
+    animation: gonext @timing ease-out infinite;
   }
   &:after {
-    animation-delay: 0.6s;
+    animation-delay: calc(@timing/2);
   }
 }
 @keyframes gonext {

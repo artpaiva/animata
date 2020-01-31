@@ -11,7 +11,7 @@ body {
 .baldachin-wrapper {
   display: inline-block;
   padding: 2rem 3rem;
-  border-bottom: 1px solid #FAF5F005;
+  border-bottom: 1px solid rgba(250, 245, 240, 0.1);
   margin-bottom: 2rem;
 }
 .baldachin-wrapper .baldachin-title {
@@ -19,10 +19,10 @@ body {
   text-rendering: optimizelegibility !important;
 }
 .baldachin-wrapper .baldachin-title span {
-  color: #FAF5F099;
+  color: rgba(250, 245, 240, 0.5);
 }
 .baldachin-wrapper .baldachin-subtitle {
-  color: #FAF5F055;
+  color: rgba(250, 245, 240, 0.65);
   font-size: 1.2rem;
 }
 .kin-vertical,
@@ -184,7 +184,7 @@ body {
   max-width: 600px;
   margin: 1rem auto;
   height: 2px;
-  background: #FAF5F055;
+  background: rgba(250, 245, 240, 0.35);
   overflow: hidden;
 }
 .hold-progress div {
@@ -218,10 +218,10 @@ body {
   opacity: 0;
   position: absolute;
   font-size: 2rem;
-  animation: gonext 1.2s ease-in-out infinite;
+  animation: gonext 1.2s ease-out infinite;
 }
 .double-dash:after {
-  animation-delay: 0.6s;
+  animation-delay: calc(1.2s/2);
 }
 @keyframes gonext {
   0% {
