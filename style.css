@@ -230,6 +230,6 @@ body {
   }
   100% {
     left: calc(100% + 3rem);
-    opacity: 0.01;
+    opacity: 0;
   }
 }
