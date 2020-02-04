@@ -194,6 +194,9 @@ body {
   background: #FAF5F0;
   animation: indefinite 1.2s linear infinite;
 }
+.hold-progress.alt div {
+  animation: indefiniteBack 2.4s linear infinite;
+}
 @keyframes indefinite {
   20% {
     width: 20%;
@@ -204,6 +207,20 @@ body {
     left: 110%;
   }
 }
+@keyframes indefiniteBack {
+  0% {
+    width: 10%;
+    left: -20%;
+  }
+  50% {
+    width: 80%;
+    left: 110%;
+  }
+  100% {
+    width: 10%;
+    left: -20%;
+  }
+}
 .double-dash {
   position: relative;
   width: 90%;
@@ -211,6 +228,7 @@ body {
   margin: 1rem auto;
   padding: 3rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 .double-dash:before,
 .double-dash:after {

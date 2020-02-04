@@ -143,16 +143,25 @@ body {
     background: @white;
     animation: indefinite @timing linear infinite;
   }
+  &.alt div {
+    animation: indefiniteBack @timing*2 linear infinite;
+  }
 }
 @keyframes indefinite {
   20% { width: 20%; left: 0; }
   100% { width: 80%; left: 110%; }
+}
+@keyframes indefiniteBack {
+  0% { width: 10%; left: -20%; }
+  50% { width: 80%; left: 110%; }
+  100% { width: 10%; left: -20%; }
 }
 
 .double-dash {
   #baseWidth;
   padding: 3rem;
   overflow: hidden;
+  margin-bottom: 2rem;
   &:before, &:after {
     content: '\276F';
     opacity: 0;
