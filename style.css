@@ -192,33 +192,33 @@ body {
   width: 1%;
   height: inherit;
   background: #FAF5F0;
-  animation: indefinite 1.2s linear infinite;
+  animation: indefinite 1.2s ease-in-out infinite;
 }
 .hold-progress.alt div {
   animation: indefiniteBack 2.4s ease-in-out infinite;
 }
 @keyframes indefinite {
-  20% {
-    width: 20%;
-    left: 0;
+  0% {
+    width: 10%;
+    left: -10%;
   }
   100% {
-    width: 80%;
-    left: 110%;
+    width: 100%;
+    left: 100%;
   }
 }
 @keyframes indefiniteBack {
   0% {
     width: 10%;
-    left: -20%;
+    left: -10%;
   }
   50% {
     width: 100%;
-    left: 110%;
+    left: 100%;
   }
   100% {
     width: 10%;
-    left: -20%;
+    left: -10%;
   }
 }
 .double-dash {
