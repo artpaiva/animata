@@ -65,9 +65,8 @@ body {
 .kin-loop (@iterations);
 
 @keyframes dance {
-  0% { transform: translate(1rem, 0); }
+  from, to { transform: translate(1rem, 0); }
   50% { transform: translate(-1rem, 0); }
-  100% { transform: translate(1rem, 0); }
 }
 
 .kin-horizontal {
@@ -78,9 +77,8 @@ body {
   }
 }
 @keyframes jumpeach {
-  0% { transform: translate(0, 1rem); }
+  from, to { transform: translate(0, 1rem); }
   50% { transform: translate(0, -1rem); }
-  100% { transform: translate(0, 1rem); }
 }
 .kin-horizontal.alt {
   li {
@@ -100,9 +98,8 @@ body {
   }
 }
 @keyframes bounce {
-  0% { transform: translate(0, 1.5rem); }
+  from, to { transform: translate(0, 1.5rem); }
   50% { transform: translate(0, -1.5rem); }
-  100% { transform: translate(0, 1.5rem); }
 }
 
 .square-ball{
@@ -152,9 +149,8 @@ body {
   100% { width: 100%; left: 100%; }
 }
 @keyframes indefiniteBack {
-  0% { width: 10%; left: -10%; }
+  from, to { width: 10%; left: -10%; }
   50% { width: 100%; left: 100%; }
-  100% { width: 10%; left: -10%; }
 }
 
 .double-dash {
@@ -176,4 +172,24 @@ body {
 @keyframes gonext {
   0% { left: -3rem; opacity: 1; }
   100% { left: calc(100% + 3rem); opacity: 0; }
+}
+
+.keyboard-typing {
+  display: inline-block;
+  h2 {
+    width: 0;
+    margin: 0 auto;
+    border-right: 2px solid @white;
+    overflow: hidden;
+    animation: blink @timing/1.5 step-end infinite, typing @timing*5 steps(20, end) infinite;
+    white-space: nowrap;
+  }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: @white; }
+}
+@keyframes typing {
+  from, 20%, to { width: 0; }
+  60%, 80% { width: 100%; }
 }

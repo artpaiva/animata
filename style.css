@@ -98,14 +98,12 @@ body {
   animation-delay: calc(1*0.1s);
 }
 @keyframes dance {
-  0% {
+  from,
+  to {
     transform: translate(1rem, 0);
   }
   50% {
     transform: translate(-1rem, 0);
-  }
-  100% {
-    transform: translate(1rem, 0);
   }
 }
 .kin-horizontal li {
@@ -114,14 +112,12 @@ body {
   animation: jumpeach 1.2s ease-in-out infinite;
 }
 @keyframes jumpeach {
-  0% {
+  from,
+  to {
     transform: translate(0, 1rem);
   }
   50% {
     transform: translate(0, -1rem);
-  }
-  100% {
-    transform: translate(0, 1rem);
   }
 }
 .kin-horizontal.alt li {
@@ -138,14 +134,12 @@ body {
   font-size: 2rem;
 }
 @keyframes bounce {
-  0% {
+  from,
+  to {
     transform: translate(0, 1.5rem);
   }
   50% {
     transform: translate(0, -1.5rem);
-  }
-  100% {
-    transform: translate(0, 1.5rem);
   }
 }
 .square-ball {
@@ -208,17 +202,14 @@ body {
   }
 }
 @keyframes indefiniteBack {
-  0% {
+  from,
+  to {
     width: 10%;
     left: -10%;
   }
   50% {
     width: 100%;
     left: 100%;
-  }
-  100% {
-    width: 10%;
-    left: -10%;
   }
 }
 .double-dash {
@@ -249,5 +240,36 @@ body {
   100% {
     left: calc(100% + 3rem);
     opacity: 0;
+  }
+}
+.keyboard-typing {
+  display: inline-block;
+}
+.keyboard-typing h2 {
+  width: 0;
+  margin: 0 auto;
+  border-right: 2px solid #FAF5F0;
+  overflow: hidden;
+  animation: blink 0.8s step-end infinite, typing 6s steps(20, end) infinite;
+  white-space: nowrap;
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #FAF5F0;
+  }
+}
+@keyframes typing {
+  from,
+  20%,
+  to {
+    width: 0;
+  }
+  60%,
+  80% {
+    width: 100%;
   }
 }
