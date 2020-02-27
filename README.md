@@ -5,4 +5,4 @@ Simple and clean animations that last forever.
 - Movings Dots
 - Ricochet Arrow
 - Quick Double Dash
-- Typewriter write and erase
+- Typewriter write and erase effect
